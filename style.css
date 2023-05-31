@@ -10,7 +10,7 @@
     color: var(--black);
     overflow-x: hidden;
     transition: .5s all linear;
-}
+} 
 body{
 background-color: var(--lightgray);
 overflow-x: hidden;
@@ -32,6 +32,7 @@ overflow-x: hidden;
     font-weight: bold;
     margin-left:2em;
     margin-top: 25%;
+   
 }
 .color_txt{
     color:var(--orange);
@@ -80,14 +81,15 @@ ul a:hover{
     background-color: #fff;
     color: var(--orange);
 }
-.home{
+.gadget{
     display: flex;
     background-color: #D0BFFF;
     font-size: x-large;
     margin-left: 10%;
     margin-right: 8%;
+    padding: 20px;
 }
-.home2{
+.gadget2{
     display: flex;
     background-color: #D0BFFF;
     font-size: x-large;
@@ -95,21 +97,32 @@ ul a:hover{
     margin-right: 7%;
     margin-top: 3%;
 }
-#remote{
-    width: 40%;
-    height: 60%;
+.gadget2 h2{
+    padding-left: 20px;
+    padding-top: 60px;
 }
-#text{
+.gadget2 p{
+    padding-left: 20px;  
+}
+
+#remote-image{
+    width: 40%;
+    height: 40%;
+}
+#lorem1{
     text-align: center;
     margin-left: 3%;
+    margin-top: 30px;
 }
-#text1{
+#testimonial{
     text-align: center;
     /* margin-left: 3%; */
     font-weight: bold;
     margin-top: 60px;
 }
-
+#lorem1{
+    margin-top: 30px;
+}
 .images{
     display: flex;
     margin-left: 10%;
@@ -123,7 +136,7 @@ ul a:hover{
 .lorem{
     display: flex;
     margin-top: 5%;
-    margin-left: 13%;
+    margin-left: 13%; 
    
 }
 
@@ -134,6 +147,7 @@ ul a:hover{
     color: #fff;
     margin-top: 5%;
     padding: 70px;
+   
   
 }
 #post{
@@ -157,7 +171,7 @@ ul a:hover{
 #name{
     font-weight: bold;
 }
-#gadget{
+#smartgadget{
     color: #ffd43b;
 }
 #headshot{
@@ -165,7 +179,165 @@ ul a:hover{
 }
   
 
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+   margin-left: 8%;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+ 
+}
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+  margin-top: 1rem;
+  background-color: white;
   
+  
+    /* border: 1px solid black; */
+  }
+  .product-section img {
+    width: 100px;
+    height: 100px;
+    /* padding: 5px 50px; 
+    margin-right: 10px; */
+   
+  }
+  .product-section h2 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+   .product-section .price {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 5rem;
+   } 
+  .product-section .price p {
+    font-size: 14px;
+  }
+  .product-section .price button {
+    background-color: gold;
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      background-color: #212529;
+      padding: 0.5rem;
+    }
+    .logo {
+      margin-left: 1rem;
+    }
+    ul {
+      margin-left: 0;
+    }
+    ul li {
+      margin-right: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .button2 {
+      gap: 1rem;
+    }
+    .category {
+      padding: 10px 20px;
+    }
+    .search {
+      padding: 10px 120px;
+    }
+    
+    .gadget2 {
+      margin-left: 5%;
+      margin-right: 5%;
+      padding: 10px;
+      flex-direction: column;
+    }
+   
+    #remote-image {
+      width: 100%;
+      height: auto;
+    }
+   
+    .lorem {
+      margin-left: 5%;
+    }
+   
+
+    .Subscribe {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 40px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .Subscribe img {
+      display: none;
+    }
+    .footer {
+      flex-direction: column;
+      padding: 40px;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .button2 {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-left: 0;
+      margin-top: 1rem;
+      align-items: center;
+    }
+    .search {
+      padding: 10px 80px;
+    }
+   
+    .gadget2 {
+      margin-left: 5%;
+      margin-right: 5%;
+      padding: 10px;
+      flex-direction: column;
+      text-align: center;
+    }
+   
+    .gadget2 p {
+      text-align: center;
+    }
+    .gadget2 h2 {
+      padding-top: 1rem;
+    }
+    #remote-image {
+      width: 100%;
+      height: auto;
+    }
+    
+    .lorem {
+      margin-left: 5%;
+      flex-direction: column;
+      align-items: center;
+    }
+   
+    .Subscribe {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 40px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .footer {
+      flex-direction: column;
+      padding: 40px;
+      text-align: center;
+    }
+    .Subscribe img {
+      display: none;
+    }
+  }
   
   
   
